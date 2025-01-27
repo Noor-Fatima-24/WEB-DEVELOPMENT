@@ -1,0 +1,182 @@
+<!--
+comments
+code pulling
+extentions
+file setup
+w3school
+stackoverflow
+prcatice
+assignments
+rules
+boiler plate code
+tag
+self-closing tag
+empty tag
+elements
+<br>
+<hr>
+types of paths
+absolute
+relative
+ anchor(href)
+  image( src width hieght alt loading (lazy eager))
+ audio
+  video(src width hieght controls muted loop )
+iframe
+
+
+  HTML
+    hyper text markup language 
+    <></>
+
+    Tags
+        tags must be open or close
+        <p attributes> Data are here </p>
+    self-closing tag
+    <br></br>
+     a self-closing tag is a tag that doesn't
+      require a separate closing tag. It's written in a single line, ending with a 
+      forward slash (/) before the closing angle bracket
+
+
+      Empty HTML Elements
+HTML elements with no content are called empty elements.
+EX: 
+The <br> tag defines a line break, and is an empty element without a closing tag
+
+
+    Extensions
+        Auto Close Tag
+        Auto Complete Tag
+        Html CSS Support
+
+    Shortcuts
+        Ctrl + R
+        Ctrl + s
+
+    Random text
+        lorem30
+
+        Elements
+The HTML element is everything from the start tag to the end tag:
+EX: 
+      <tagname>Content goes here...</tagname>
+
+
+
+
+      Anchor Tag
+ Links are fundamental to navigating the web. In HTML, links are created using the <a> tag, also known as the Anchor tag.
+ 
+ Key Characteristics of HTML Links
+ Specified by the <a> tag.
+ Also known as hyperlinks.
+ Used to link one document to another.
+ Includes a closing tag </a>.
+
+ Syntax of HTML Links
+
+ <a href="Your specified path">
+     content
+ </a>
+
+   href
+ href attribute specifies the Hypertext Reference of a hyperlink  
+
+    path
+           absolute path
+               complete path
+             https://www.google.com/
+           relative path
+               ../../ for previous
+               ./ for next
+
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://www.google.com/"  >click</a>
+    <a href="./public/pic8.jpg"  >img</a>
+<br>
+<br>
+
+ <!--IMAGE-->
+<!--<img /> is self closing tag-->
+<!-- src = address of source
+ basic:
+<img src="image's path" />
+
+-->
+<img src="./public/pic13.jpeg" alt="this is an image" loading="lazy" width="400" height="400" />
+<!-- alt can be used as alternative
+ 
+       loading
+    lazy
+ Loads resources on demand: Only loads resources when they are actually 
+ needed or come into view   
+ Improves performance
+
+ Example:
+An image at the bottom of a long webpage is only loaded when the user scrolls down to it.
+ 
+     Eager Loading
+
+Loads all resources upfront: Loads all resources immediately when the page is first requested.
+Can lead to slower initial load times: Especially on slower connections or with many large resources.
+May waste resources: Loads resources that the user may never interact with.
+
+    Example:
+Loading all images on a page at once, even if some are in end of page.
+--> 
+<br>
+<br>
+<img src="./public/pic13.jpeg" alt="this is an image" loading="eager" width="400" height="400" />
+
+
+
+<br>
+<br>
+
+
+ <!--VIDEO-->
+          <!--<video /> is self closing tag-->
+          <video src="./public/video.mp4" controls poster="./public/pic13.jpeg" loop width="400" height="400" >hello</video>
+          <!--
+          controls= Adds playback controls (play, pause, volume, etc.) for the video.
+          poster="": Displays the specified image (img.jpg) as a placeholder before the video starts playing.
+          loop: Ensures the video plays continuously in a loop
+
+ muted attribute 
+ in the HTML <video> tag when present, mutes the audio output of the video by default.
+
+Here's how it works:
+Mutes the video: 
+When the muted attribute is included in the <video> tag, the video will start playing without any sound.
+
+          -->
+<br>
+<br>
+<video src="./public/video.mp4" controls poster="./public/pic13.jpeg" loop width="400" height="400" >
+<br>
+
+<br >  
+<!--AUDIO-->
+   <!--<audio /> is a self closing tag--> 
+   <audio src="" controls muted > hi</audio>
+
+
+</body>
+</html>
+
+
+
+
+
