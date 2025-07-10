@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <!-- form is used to collect user input. The user input is most often sent to a server for processing.
+
+ -->
+    
+
+
+<form action="" method="post">
+
+
+<label for="identity" >ENTER HERE</label>
+<br>
+<input type="text" id="identity" placeholder="enter your name">
+
+<input type="password" name="password" placeholder="Enter your password">
+
+<!-- <input type="text">	Displays a single-line text input field
+<input type="radio">	Displays a radio button (for selecting one of many choices)
+<input type="checkbox">	Displays a checkbox (for selecting zero or more of many choices)
+<input type="submit">	Displays a submit button (for submitting the form)
+<input type="button">	Displays a clickable button -->
+
+
+<!-- value 
+ 
+For text fields, checkboxes, radio buttons, and hidden fields, the value
+ attribute is used to define what value will be sent when the form is submitted.
+
+-->
+
+
+ <!-- Submit button -->
+ <input type="submit" value="Submit">
+ <br>
+
+<!--radio-->
+
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label>
+<br>
+
+<!-- checkbox -->
+
+<input type="checkbox" id="subscribe" name="subscribe" value="yes">
+<label for="subscribe">Subscribe to newsletter</label>
+
+<input type="checkbox" id="subscribe" name="subscribe" value="yes">
+<label for="subscribe">Subscribe to newsletter</label>
+
+<br>
+<!-- Select Element
+The select element creates a dropdown menu for the user. It is useful when you have a predefined list of options for the user to choose from.-->
+
+<select name="fruits">
+      <option value="apple">Apple</option>
+      <option value="banana">Banana</option>
+      <option value="cherry">Cherry</option>
+</select> 
+
+
+<!-- rrequired
+ The required attribute is used to indicate that an input field must be filled out before the form can be submitted.
+
+-->
+ <!-- file
+  
+ he type="file" attribute in an HTML <input> element is used to create a file upload field. This allows users to select and upload files (such as images, documents, videos, etc.) from their device to the web server
+ 
+ -->
+
+
+ <!-- datalist
+  predefined option ( suggestions)
+ conjunction with an <input> field
+-->
+
+<br />
+<input type="text" placeholder="Enter Your City" list="city" >
+<datalist id="city">
+   <option value="Bhawalpur"/>
+    <option value="Burewala"/>
+    <option value="Lahore"/>
+    <option value="Vehari"/>
+    <option value="Multan"/>
+</datalist>
+<br />
+
+
+<input type="radio" name="gender" id="male">
+<label for="male">Male</label>
+<br>
+
+<input type="radio" name="gender" id="female">
+<label for="female">Female</label>
+
+<input type="text" placeholder="file" >
+</form>
+ 
+
+
+</body>
+</html>
+<!-- 
+lorem
+pushing code
+ nested 
+ dom tree  
+ 
+ contenteditable
+ 
+ 
+  <h1 title="fatima">noor</h1>-->
