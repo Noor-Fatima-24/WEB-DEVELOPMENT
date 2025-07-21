@@ -1,0 +1,99 @@
+<!-- 
+ 
+div    use for partition in websites.
+takes 100% width 
+
+span
+takes as much width as content
+
+how top imbed pdf 
+1 must have a saved pdf 
+cop n paste to sme folder 
+use EMBED tag src = path 
+or
+obj -- tag
+use data attribute give path , widht , hight, type= application/pdf (optional)
+
+iframe
+to embed anything
+use src= path
+
+how to embed yt vedio
+take a yt vedio]
+share  - ebed -  copy iframe 
+paste in code anywhere 
+ 
+if we want our vedio to start from a specifc time so
+so go to share embed write time in start at box thjen paste 
+
+how to embed another website
+use i frame 
+src= paste website link address shown onn up bar 
+
+how to make form 
+ude div then
+label  
+input type = text , name (use for backend) , placeholder 
+div - label
+input... 
+div - button 
+serch :
+div - label search - input type = search
+url of any other web:
+make a label , input type url
+num:
+input type num - maxc=92 - min=81  - stp= 3 (its will display numbers with a gap of 3)
+phone . no:
+label - input type= tel
+colr:
+type color .
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 06 🎯</title>
+</head>
+<body style="background-image: url(./public/img/02.png); background-repeat: no-repeat; background-size: cover; color: aliceblue;">
+    <h1 align="center">practice 06 🎯</h1>
+    <!-- <p> stands for pragraph text -->
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias iure facilis laudantium quia porro omnis necessitatibus molestias veniam sed rem accusantium perspiciatis, cumque, perferendis optio voluptates tempora? Maxime, eius assumenda!</p>
+     <br><!-- <pre> stands for preformatted text -->
+    <pre>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias iure facilis laudantium quia porro omnis necessitatibus molestias veniam sed rem accusantium perspiciatis</pre>
+     <br><!-- div - division/container - block level - takes full width -->
+     <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias iure facilis laudantium quia porro omnis necessitatibus molestias veniam sed rem accusantium perspiciatis, cumque, perferendis optio voluptates tempora? Maxime, eius assumenda!</div>
+      <br><!-- span - inline - Styling or targeting part of text -->
+     <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias iure facilis laudantium quia porro omnis necessitatibus molestias veniam sed rem accusantium perspiciatis, cumque, perferendis optio voluptates tempora? Maxime, eius assumenda!</span>
+     <br>
+     <h4>PDF</h4>
+     <!-- embed pdf -->
+     <!-- (1)
+                 By embed tag 
+      use to embed external content 
+      Attributes  - type (Media type) - width - hight - autostart (Auto-starts media ,its old tech)
+     -->
+      <embed src="./public/pdf/01.pdf" type="application/pdf" width="400px" height="200px">
+    <!-- (2)
+                 By iframe tag 
+      used to embed another webpage or external document 
+      Attributes  - src (path/URL) - width - hight - allowfullscreen - frameborder (0 (no border) or 1 (default border) — optional) - title (Describes the iframe for accessibility (important for SEO)) - loading (lazy or eager)
+     -->
+      <h4>website</h4>
+    <iframe src="https://gcb-tech.vercel.app/" frameborder="2" width="850px" height="250px" allowfullscreen title="GCB-Tech" loading="lazy"></iframe>
+     <!-- yt vedio -->
+      <h4>YT vedio</h4>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/X8BYu3dMKf0?si=7u8lF7SXgXWWFhJf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <br>
+      <h4>GCB-Tech</h4>
+    <!-- (3)
+                 By object tag 
+      embeds media and other resources and supports fallback content 
+      Attributes  - data (URL/path) - type (Media type) - width - hight - name (Name of the object (optional, used in scripting))- form - (Associates object with a <form> element (rare))
+     -->
+  <object data="https://gcb-tech.vercel.app/" type="text/html" height="200px" width="600px"></object>
+
+</body>
+</html>
