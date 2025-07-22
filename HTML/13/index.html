@@ -1,0 +1,117 @@
+
+<!--             forms 
+ 
+| Attribute      | Description                                             |
+| -------------- | ------------------------------------------------------- |
+| `action`       | URL where form data is sent (e.g., `submit.php`)        |
+| `method`       | HTTP method: `GET` (default) or `POST`                  |
+| `target`       | Where to open the response (`_self`, `_blank`, etc.)    |
+| `autocomplete` | `on` or `off` — browser autofill                        |
+| `enctype`      | Encoding for file uploads (e.g., `multipart/form-data`) |
+| `name`         | Name of the form                                        |
+| `novalidate`   | Disables HTML5 form validation                          |
+
+1.   Text   Input 
+
+| Attribute     | Description                                 |
+| ------------- | ------------------------------------------- |
+| `type`        | `text`, `email`, `password`, `number`, etc. |
+| `name`        | Name sent to server                         |
+| `placeholder` | Shows faded hint text                       |
+| `value`       | Pre-filled value                            |
+| `required`    | Makes the field mandatory                   |
+| `maxlength`   | Limits input length                         |
+
+2.   textarea
+
+<textarea name="message" rows="5" cols="30" placeholder="Your message"></textarea>
+
+3.   radio buttons
+
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+
+4.   hceckboxes
+
+<input type="checkbox" name="hobby" value="coding"> Coding
+<input type="checkbox" name="hobby" value="music"> Music
+
+5.  select drpdown
+
+<select name="city">
+  <option value="lahore">Lahore</option>
+  <option value="karachi">Karachi</option>
+</select>
+
+6.  file upload
+
+<input type="file" name="resume">
+
+ 7. Buttons
+
+i.      Submit Button:
+<input type="submit" value="Submit">
+ii.     Reset Button:
+<input type="reset" value="Reset">
+iii.     Custom Button:
+<button type="button" onclick="alert('Clicked!')">Click Me</button>
+
+method="get" vs method="post"
+
+| Method | When to Use                      | Data Shown in URL? |
+| ------ | -------------------------------- | ------------------ |
+| `get`  | Search, filters (small data)     | ✅ Yes              |
+| `post` | Login, registration, file upload | ❌ No (more secure) |
+
+
+-->
+ 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 06 🎯| Forms</title>
+</head>
+<body style="background-color: rgb(114, 18, 204); color: rgb(255, 251, 5);">
+    
+     <h1 >practice 06 🎯 | Forms</h1>
+    <!-- form -  -->
+     <div style="background-image: url(./public/img/image.png); background-size: cover; width: 400px; align-self: center;" >
+    <form action="" autocomplete="on" align="center">
+        <h1>FORM</h1>
+        <label for="name">NAME:</label>
+            <input type="text" required>
+            <br><br>
+        <label for="email">EMAIL:</label>
+            <input type="email" required>
+            <br><br>
+        <label for="password">PASSWORD:</label>
+            <input type="password" required>
+            <br><br>
+        <label for="search">SEARCCH:</label>
+            <input type="search" required>
+            <br><br>
+        <label for="number">NUMBER:</label>
+            <input type="number" max="100" min="0" required>
+            <br> <br>
+        <label for="url">URL:</label>
+            <input type="url" required>
+            <br><br>
+        <label for="color">COLOR:</label>
+            <input type="color" required>
+            <br><br>
+        <label for="tel">TEL:</label>
+            <input type="tel" required>
+            <br><br>
+        <label for="submit">SUBMIT:</label>
+            <input type="submit" required>
+            <br><br>
+
+    </form>
+  </div>
+
+</body>
+</html>
