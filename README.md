@@ -1,2 +1,2 @@
 # WEB-DEVELOPMENT
-For extra html and css classes
+For just important concepts of html, css and java script.
