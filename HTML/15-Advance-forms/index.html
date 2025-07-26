@@ -1,0 +1,282 @@
+<!-- 
+             Main Attributes used in html forms
+
+| Attribute        | Description                                                                                                                                                                                            |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| action         | URL where the form data will be sent after submission.                                                                                                                                                 |
+| method         | HTTP method to use: "get" (default) or "post".                                                                                                                                                     |
+| enctype        | Type of content used when submitting the form (mainly with POST). Common values: <br>• application/x-www-form-urlencoded (default) <br>• multipart/form-data (for file uploads) <br>• text/plain |
+| name           | Name of the form (used to reference it in JavaScript).                                                                                                                                                 |
+| target         | Where to display the response after submitting: <br>• _self (default) <br>• _blank <br>• _parent <br>• _top                                                                                    |
+| autocomplete   | "on" or "off" – allows the browser to auto-fill values.                                                                                                                                            |
+| novalidate     | Boolean attribute – disables browser's automatic validation.                                                                                                                                           |
+| rel            | Specifies the relationship between current page and form action URL (rarely used).                                                                                                                     |
+| accept-charset | Character encodings the server accepts (e.g., "UTF-8").                                                                                                                                              |
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 07 🎯| Forms</title>
+</head>
+<body style="background-color: rgb(0, 0, 0); color: rgb(172, 255, 64); font-size: 30px;">
+   <h1 align="center" style="color: rgb(255, 64, 207);">practice 07 🎯 | Forms</h1>
+     
+    <!-- form -  -->
+     <!-- Inputs in html -->
+    <form action="" autocomplete="on" align="center">
+        <h1 style="color: rgb(65, 166, 255);">FORM</h1>
+             <!-- 
+1. Text-Based Inputs 
+
+| Type       | Description                         |
+| ---------- | ----------------------------------- |
+| text     | Single-line input (default)         |
+| password | Hidden input for passwords          |
+| email    | Validates email format              |
+| url      | Validates a website URL             |
+| search   | Search box (may show "X" to clear)  |
+| tel      | Phone number (no strict validation) |
+            
+             --> 
+<fieldset >   
+    <legend>Text-Based Inputs</legend>                                              
+        <label for="name">NAME:</label>
+            <input type="text" required placeholder="Name">
+            <br><br>
+        <label for="email">EMAIL:</label>
+            <input type="email" required placeholder="Email">
+            <br><br>
+        <label for="password">PASSWORD:</label>
+            <input type="password" required placeholder="password">
+            <br><br>
+        <label for="search">SEARCCH:</label>
+            <input type="search" required placeholder="search">
+            <br><br>
+             <label for="url">URL:</label>
+            <input type="url" required placeholder="url">
+            <br><br>
+             <label for="tel">TEL:</label>
+            <input type="tel" required placeholder="tel">
+            <br><br>
+</fieldset>
+            <!-- 
+2. Number & Range
+
+| Type     | Description                      |
+| -------- | -------------------------------- |
+| number | Accepts only numeric input       |
+| range  | Slider input with min/max values |
+
+            -->
+        <label for="number">NUMBER:</label>
+            <input type="number" max="100" min="0" required placeholder="Number">
+            <br> <br>
+<label for="range">Range:</label>
+            <input type="range"required placeholder="range">
+            <br> <br>
+<!-- 
+3. Date & Time
+
+| Type             | Description        |
+| ---------------- | ------------------ |
+| date           | Date picker        |
+| time           | Time picker        |
+| datetime-local | Date + time picker |
+| month          | Month/year picker  |
+| week           | Week/year picker   |
+
+-->
+            <label for="date">DATE:</label>
+            <input type="date" required placeholder="Date">
+            <br><br>
+            <label for="time">Time:</label>
+            <input type="time" required placeholder="time">
+            <br><br>
+            <label for="datetime-local">Datetime-local:</label>
+            <input type="datetime-local" required placeholder="datetime-local">
+            <br><br>
+            <label for="month">Month:</label>
+            <input type="month" required placeholder="month">
+            <br><br>
+            <label for="week">  Week:</label>
+            <input type="week" required placeholder="week">
+            <br><br>
+            <!-- 
+ 4.
+  Choices (User Selection)
+
+| Type       | Description                     |
+| ---------- | ------------------------------- |
+| checkbox | Multiple selections allowed     |
+| radio    | Single selection within a group |
+            
+            -->
+         
+            <label for="checkbox">checkbox:</label>
+            <input type="checkbox" required placeholder="checkbox">
+            <br><br>
+            <label for="radio">radio:</label>
+            <input type="radio" required placeholder="radio">
+            <br><br>
+            <label for="radio">gender:</label><br><br>
+            <input type="radio" required placeholder="radio" name="gender" id="female">male
+            <br><br>
+            <input type="radio" required placeholder="radio" name="gender" id="male">female
+            <br><br>
+
+            <!-- 
+5. 
+   File & Media
+        
+| Type    | Description                 |
+| ------- | --------------------------- |
+| file  | File upload from device     |
+| image | Submit button with an image |
+
+            -->
+           
+            <label for="file">Upload a file:</label>
+            <input type="file" accept="image/png" required placeholder="file" name="file">
+            <br><br>
+            <label for="image">img:</label>
+            <input type="image" src="./public/img/image.png" required alt="Submit" name="image" width="300px" height="100px">
+            <br><br>
+            <!-- 
+ 6. 
+   Hidden & Read-Only
+ 
+| Type       | Description                           |
+| ---------- | ------------------------------------- |
+| hidden   | Not visible in UI, used to store data |
+| readonly | Prevents user from changing value     |
+| disabled | Field is visible but not usable       |
+
+ -->
+
+        <input type="hidden" value="userID123"><br>
+<input type="text" value="Readonly" readonly><br>
+<input type="text" value="Disabled" disabled><br><br>
+ <!-- 
+ 7. 
+    Buttons
+ 
+| Type     | Description                   |
+| -------- | ----------------------------- |
+| submit | Submits form                  |
+| reset  | Resets form fields            |
+| button | Generic button (used with JS) |
+
+ -->
+    <input type="submit" value="submit"><br>
+<input type="reset" value="reset" readonly><br>
+<label for="button">button</label>
+    <input type="button" value="button" ><br><br>
+    <label for="color">COLOR:</label>
+            <input type="color" required>
+            <br><br>
+       
+
+            <!-- teastarea -->
+<div>
+    <textarea name="teastarea" id="" cols="50" rows="6">textarea</textarea>
+</div>
+<!-- select 
+
+Attributes of <select> Tag
+
+| Attribute   | Description                                                           |
+| ----------- | --------------------------------------------------------------------- |
+| name      | The name of the drop-down list (used when submitting form data).      |
+| id        | Unique identifier for the element (useful with labels or JavaScript). |
+| multiple  | Allows the user to select **multiple** options.                       |
+| size      | Number of visible options in the list (default is 1 for a dropdown).  |
+| disabled  | Disables the dropdown (user cannot interact with it).                 |
+| required  | Makes selection mandatory before form submission.                     |
+| autofocus | Automatically focuses on the dropdown when the page loads.            |
+| form      | Links the <select> to a specific form by its id.                  |
+| class     | Adds one or more class names (for styling with CSS).                  |
+| style     | Inline CSS styles for the select box.                                 |
+| title     | Adds a tooltip when the user hovers over the dropdown.                |
+
+Related Tags:
+
+<option>: Represents each option in the dropdown.
+<optgroup>: Groups related options together inside the dropdown
+
+-->
+ <select name="Dropdown" id="select" multiple size="3" required >
+<optgroup>
+    <option value="BSCS">BSCS</option>
+    <option value="BSSE">BSSE</option>
+    <option value="BSIT">BSIT</option>
+</optgroup>
+<optgroup>
+    <option value="BA">BA</option>
+    <option value="BCS">BCS</option>
+    <option value="MS" disabled>MS</option>
+</optgroup>
+ </select>
+
+ <!-- datalist -->
+<br><br>
+<label for="foods">Choose your favorite food:</label>
+<input list="food" id="foods" name="foods" placeholder="Type a food">
+
+<datalist id="food">
+  <option value="pizza"></option>
+  <option value="chowmein"></option>
+  <option value="Biryani"></option>
+  <option value="pasta"></option>
+  <option value="choclate"></option>
+  <option value="chips"></option>
+</datalist>
+
+<!-- 
+<form>
+  <fieldset>
+    <legend>Personal Info</legend>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name"><br><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age">
+  </fieldset>
+</form>
+
+fieldset:
+It's a container for form inputs like textboxes, radio buttons, etc.
+
+| Attribute  | Description                                                                  |
+| ---------- | ---------------------------------------------------------------------------- |
+| disabled | Disables all form elements inside the fieldset (they become un-editable).    |
+| form     | Associates the fieldset with a specific form by its id (used rarely).      |
+| name     | Not commonly used now; can be used to reference the group (some legacy use). |
+
+Related Tags to Know:
+
+| Tag          | Description                                               |
+| ------------ | --------------------------------------------------------- |
+| <fieldset> | Groups related form fields together with a border.        |
+| <legend>   | Caption for a <fieldset>.                               |
+| <label>    | Defines a label for a form input. Improves accessibility. |
+| <input>    | Basic form field (text, email, checkbox, etc.).           |
+| <select>   | Drop-down list.                                           |
+| <optgroup> | Groups related <option>s inside a <select>.           |
+| <option>   | Represents an item in a drop-down menu.                   |
+| <textarea> | Multi-line text field.                                    |
+| <button>   | Clickable button (submit, reset, etc.).                   |
+
+
+-->
+
+    </form>
+
+
+</body>
+</html>
